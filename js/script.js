@@ -96,7 +96,7 @@ async function enviarFormularioAjax(formulario) {
 
 const formContato = document.getElementById('form-contato');
 const btnSend = document.getElementById('btnSend');
-const boxContato = document.getElementById('contato-feedback');
+const boxContato = document.getElementById('contato-feedback');/*Desenvolvido por Juliana Cavanellas*/
 
 if (formContato && btnSend) {
   formContato.addEventListener('submit', async (event) => {

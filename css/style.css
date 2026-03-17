@@ -440,6 +440,7 @@ footer h3{
     transition: 0.3s;
 }
 
+/*Desenvolvido por Juliana Cavanellas*/
 .email:hover{
     color: #000000;
     font-weight: bold;
@@ -623,7 +624,7 @@ a.whatsapp{
     .footer-local a {
         text-align: center;
     }
-
+    /*Desenvolvido por Juliana Cavanellas*/
     .sociais {
         justify-content: center;
         flex-direction: row;

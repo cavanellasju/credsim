@@ -51,7 +51,7 @@ function enviarPorSmtp(
 ): bool {
     $alvo = $porta === 465 ? "ssl://{$host}" : $host;
     $socket = executarSemWarning(static fn () => stream_socket_client("{$alvo}:{$porta}", $errno, $errstr, 15));
-
+    /*Desenvolvido por Juliana Cavanellas*/
     if (!$socket) {
         return false;
     }
@@ -175,7 +175,7 @@ function obterArquivoLogPorTipo(string $tipo): string
 function registrarFormularioLocal(string $tipo, array $campos, ?string $erroMail = null): bool
 {
     $diretorio = __DIR__ . '/storage';
-
+    /*Desenvolvido por Juliana Cavanellas*/
     if (!is_dir($diretorio) && !mkdir($diretorio, 0775, true) && !is_dir($diretorio)) {
         return false;
     }
